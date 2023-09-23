@@ -159,6 +159,15 @@ require('telescope').extensions.smart_open.smart_open({cwd_only = true})
 
   Limit the results to files under the current working directory.  This is normally not needed because if you prefer this pattern of access, then the plugin will pick up on that over time regardless, to the point where files under `cwd` will be recommended above all others.
 
+- `filename_first` (default: `true`)
+
+  Format filename as "filename path/to/parent/directory" if `true` and "path/to/parent/directory/filename" if `false`.
+
+- `space_as_separator` (default: `false`)
+
+  Use space to separator file from folder.  Useful to remove de necessity of `/`.
+
+
 ## Configuration
 
 See [default configuration](https://github.com/nvim-telescope/telescope.nvim#telescope-defaults) for full details on configuring Telescope.
